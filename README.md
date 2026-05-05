@@ -26,11 +26,13 @@ Proyecto desarrollado por **Bruno**. El enfoque principal de este trabajo fue pr
 Estas son las diferentes paginas dentro de la aplicación.
 ## Iniciar Sesión
 <img width="1896" height="895" alt="image" src="https://github.com/user-attachments/assets/067d9978-e60f-4a7c-a3c5-79cac65d2c85" />
+
 ## Registrarse
 <img width="1899" height="899" alt="image" src="https://github.com/user-attachments/assets/6de3c9db-e5fa-4961-aba2-992c93f67781" />
 
 ## Pantalla Inicio
 <img width="1902" height="905" alt="image" src="https://github.com/user-attachments/assets/6bca56d1-c73e-42f7-a93b-1f9be75b8047" />
+
 ## Pantalla del Juego
 <img width="1897" height="902" alt="image" src="https://github.com/user-attachments/assets/e30878b9-3d34-438b-b187-3c63faaa2f99" />
 
