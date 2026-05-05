@@ -25,15 +25,16 @@ Proyecto desarrollado por **Bruno**. El enfoque principal de este trabajo fue pr
 ## Paginás
 Estas son las diferentes paginas dentro de la aplicación.
 ### Iniciar Sesión
-<img width="2000" height="2588" alt="image" src="https://github.com/user-attachments/assets/7f62ae93-0a3a-4e8a-8f53-29e975354615" />
+<img width="1896" height="895" alt="image" src="https://github.com/user-attachments/assets/067d9978-e60f-4a7c-a3c5-79cac65d2c85" />
 ### Registrarse
-<img width="2000" height="2588" alt="image" src="https://github.com/user-attachments/assets/45a69279-0ea2-41e7-8de1-75e1f241f4f0" />
+<img width="1899" height="907" alt="image" src="https://github.com/user-attachments/assets/4a6a1a9a-86c6-41b8-805c-dc0ac6f5c897" />
 ### Pantalla Inicio
 <img width="1902" height="905" alt="image" src="https://github.com/user-attachments/assets/6bca56d1-c73e-42f7-a93b-1f9be75b8047" />
 ### Pantalla del Juego
-<img width="2000" height="2588" alt="image" src="https://github.com/user-attachments/assets/b2fbeaaf-63a5-4c42-8611-0bd8751706f3" />
+<img width="1896" height="902" alt="image" src="https://github.com/user-attachments/assets/d213a7a0-9343-4af3-8280-818318a2f7f8" />
 ### Pantalla Final de Juego
-<img width="2000" height="2588" alt="image" src="https://github.com/user-attachments/assets/8a377771-8124-4128-906d-341169d6a7de" />
+<img width="1896" height="902" alt="image" src="https://github.com/user-attachments/assets/6f51beeb-8bf0-4231-9035-461bc996ae98" />
+
 
 
 
