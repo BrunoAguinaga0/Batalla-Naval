@@ -27,13 +27,16 @@ Estas son las diferentes paginas dentro de la aplicación.
 ## Iniciar Sesión
 <img width="1896" height="895" alt="image" src="https://github.com/user-attachments/assets/067d9978-e60f-4a7c-a3c5-79cac65d2c85" />
 ## Registrarse
-<img width="1899" height="907" alt="image" src="https://github.com/user-attachments/assets/4a6a1a9a-86c6-41b8-805c-dc0ac6f5c897" />
+<img width="1899" height="899" alt="image" src="https://github.com/user-attachments/assets/6de3c9db-e5fa-4961-aba2-992c93f67781" />
+
 ## Pantalla Inicio
 <img width="1902" height="905" alt="image" src="https://github.com/user-attachments/assets/6bca56d1-c73e-42f7-a93b-1f9be75b8047" />
 ## Pantalla del Juego
-<img width="1896" height="902" alt="image" src="https://github.com/user-attachments/assets/d213a7a0-9343-4af3-8280-818318a2f7f8" />
+<img width="1897" height="902" alt="image" src="https://github.com/user-attachments/assets/e30878b9-3d34-438b-b187-3c63faaa2f99" />
+
 ## Pantalla Final de Juego
-<img width="1896" height="902" alt="image" src="https://github.com/user-attachments/assets/6f51beeb-8bf0-4231-9035-461bc996ae98" />
+<img width="1895" height="903" alt="image" src="https://github.com/user-attachments/assets/478c9f2c-70de-4f01-ae64-f09e133df8dd" />
+
 
 
 
