@@ -1,0 +1,494 @@
+/* ==========================================================================
+    1. VARIABLES Y GENERALES (Configuración base)
+   ========================================================================== */
+:root {
+    --fondo: #0f172a;        /* 60% */
+    --card: #1e293b;         /* 30% - Un poco más claro que el fondo */
+    --acento: #22d3ee;       /* 10% - Cian neón */
+    --texto: #f8fafc;
+    --texto-secundario: #94a3b8;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../IMG/imagen.webp");
+    width: 100vw;
+    height: 100vh;
+}
+
+.inicio-section {
+    width: 100vw; /* Ocupa todo el ancho de la ventana */
+    height: 100vh; /* Ocupa toda la pantalla */
+}
+
+/* ==========================================================================
+    2. GRID LAYOUT (La estructura de los 9 cuadros)
+   ========================================================================== */
+.container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(15,minmax(min-content,1fr) );
+}
+
+
+
+/* --- Posicionamiento de cada elemento --- */
+.elemento1 {
+    grid-column: 1/3;
+    grid-row: 1/3;
+    padding: 0.7rem;
+}
+
+.elemento2 {
+    grid-column: 3/8;
+    grid-row: 1/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.elemento3 {
+    grid-column: 8/10;
+    grid-row: 1/3;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin: 0.2rem;
+}
+
+.elemento4 {
+    background-color: var(--card);
+    grid-column: 1/3;
+    grid-row: 3/13;
+    border: 2px solid var(--acento);
+    border-radius: 25px;
+    margin: 0.5rem;
+    padding: 1rem; /* Más espacio interno */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los títulos */
+    color: var(--texto);
+    overflow: auto;
+}
+
+    .elemento5 {
+        background-color: var(--card);
+        grid-column: 3/8;
+        grid-row: 3/13;
+        border: 2px solid var(--acento);
+        border-radius: 5px;
+        margin: 0.5rem;
+        padding: 0.5rem;
+    }
+
+.elemento6 {
+    background-color: var(--card);
+    grid-column: 8/10;
+    grid-row: 3/13;
+    border: 2px solid var(--acento);
+    border-radius: 25px;
+    margin: 0.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.elemento7 {
+    grid-column: 1/3;
+    grid-row: 13/16;
+}
+
+.elemento8 {
+    background-color: var(--card);
+    grid-column: 3/8;
+    grid-row: 13/16;
+    width: auto;
+    min-width: 70%;
+    border: 2px solid var(--acento);
+    border-radius: 25px;
+    margin: 0.25rem;
+    padding-top: 0.7rem;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: auto;
+    gap: 1rem;
+    justify-content: center;
+    justify-self: center;
+}
+
+.radios-container{
+    display: flex;
+    justify-content: center;
+    overflow-y: auto;
+    column-gap: 1rem;
+}
+.h3-tablero{
+    margin: 0.1rem;
+}
+.titulo-tablero{
+    align-items: center;
+    border-bottom: #00fff7 1px solid;
+}
+
+.elemento9 {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    grid-column: 8/10;
+    grid-row: 13/16;
+    padding: 0.7rem;
+}
+
+.titulo {
+    color: #00fff7;
+    text-shadow: 
+        0 0 7px rgba(34, 211, 238, 0.8),
+        0 0 15px rgba(34, 211, 238, 0.4);
+}
+
+.nombre_resaltado {
+    color: var(--acento);
+    font-weight: bold;
+    /* Neón más suave para texto pequeño */
+    text-shadow: 
+        0 0 7px rgba(34, 211, 238, 0.8),
+        0 0 15px rgba(34, 211, 238, 0.4);
+}
+
+button[name="cerrar-sesion"] {
+    background-color: rgb(120, 28, 28);
+    color: var(--texto);
+    border: 1px solid red;
+    padding: 0.7rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+button[name="cerrar-sesion"]:hover {
+    background-color: #f87171; /* Rojo suave para indicar salida */
+    color: white;
+    border-color: #f87171;
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.9);
+}
+
+
+.elemento4 h3:first-child {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--texto);
+}
+
+.info_ultima_partida, .sin_partida_resaltada {
+    width: 100%; 
+    margin-top: 0.5rem;
+}
+
+.info_ultima_partida h3 {
+    font-size: 1.5rem; 
+    color: var(--acento);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    border-bottom: 2px solid var(--acento);
+    padding-bottom: 0.5rem;
+    text-shadow: 0 0 10px rgba(34, 211, 238, 0.5);
+}
+
+.info_ultima_partida p, .sin_partida {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.8rem 0; 
+    font-size: 1.1rem; 
+    color: var(--texto-secundario);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 1.5rem;
+
+}
+
+.info_ultima_partida span, .sin_partida_resaltada {
+    font-size: 1.3rem; 
+    color: var(--acento);
+    font-weight: bold;
+    text-shadow: 0 0 8px #22d3ee99;
+    font-family: 'Courier New', Courier, monospace; 
+}
+
+button[name="comenzar_partida"] {
+    background-color: #1b7f8e99;
+    color: var(--texto);
+    border: 1px solid #0e485199;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    font-size: large;
+}
+
+button[name="comenzar_partida"]:hover {
+    background-color: #13a0b6cb; 
+    color: white;
+    border-color: #22d3ee99;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(34, 211, 238, 0.9);
+}
+
+.radios{
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+.radios:last-child{
+    border-right: none;
+}
+
+
+.radios-Interno{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    padding-right: 0.5rem;
+}
+.radius1{
+    padding-top: 0.9rem;
+}
+
+.img-tablero{
+    width: 4rem;
+    height: 4rem;
+    filter: invert(1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.img-chica{
+    width: 2.2rem;
+    height: 2.2rem;
+}
+.radios-Interno input[type="radio"]:checked ~ .img-tablero {
+    border: 2px solid var(--acento);
+    border-radius: 8px;
+    box-shadow: 0 0 10px var(--acento);
+}
+.radios-Interno input[type="radio"]:checked ~ span {
+    color:  rgb(255, 79, 79);
+    text-shadow: 0 0 8px rgb(158, 40, 40);
+}
+input[type="radio"] {
+    display: none;
+}
+
+.celda-previsualizacion {
+    border: 1px solid rgba(34, 211, 238, 0.15);
+    background-color: rgba(34, 211, 238, 0.03);
+}
+
+.div-posTablero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-posTablero p{
+    color:white;
+    font-size: large;
+    font-weight: bold;
+}
+
+.portaviones{
+    background-color: rgb(162, 173, 175);;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.96);
+}
+
+.destructores{
+    background-color: rgba(8, 171, 41, 0.425);
+    box-shadow: 0 0 10px rgba(8, 171, 41, 0.5); 
+}   
+
+.acorazados{
+    background-color: rgba(180, 35, 35, 0.655);
+    box-shadow: 0 0 10px rgb(234, 13, 13); 
+}
+
+.submarinos{
+    background-color: rgba(255, 217, 0, 0.589);
+    box-shadow: 0 0 10px rgba(240, 253, 1, 0.801); 
+}
+
+
+.titulo_flota{
+    font-size: 1.7rem;
+    text-shadow: 0 0 10px rgba(34, 211, 238, 0.5);
+    border-bottom: 1px solid var(--acento);
+}
+
+.flota{
+    display: flex;
+    width: 80%;
+    flex-direction: column;      
+    gap: 1rem;
+}
+
+.contador-flota{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    padding-left: 45px ;
+}
+
+.boton-sumres{
+    background: var(--fondo);
+    color: var(--texto);
+    border: 1px solid var(--acento);
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.h3-flota{
+    text-align: center;
+    color: var(--acento);
+    font-size: 1.3rem;
+    text-shadow: 0 0 8px rgba(34, 211, 238, 0.5);
+    margin: 0;
+}
+
+.flota-comun{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.134);
+
+}
+
+#barco-fantasma {
+    position: fixed;
+    pointer-events: none; 
+    display: none; 
+    opacity: 0.7;
+    z-index: 10;
+    transition: transform 0.05s linear;
+}
+
+.fantasma-celda {
+    width: 60px;
+    height: 50px;
+}
+
+.elemento {
+    opacity: 0.85;
+}
+
+/* --- Estilos de la Modal --- */
+.modal-overlay {
+    display: none; /* Oculta por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo negro semitransparente */
+    z-index: 9999; /* Para que quede por encima de todo, incluso de los barcos flotantes */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: rgba(14, 35, 37, 0.5); /* Color oscuro naval */
+    border: 2px solid var(--acento); /* Borde neón */
+    border-radius: 10px;
+    padding: 30px;
+    width: 80%;
+    max-width: 600px;
+    color: white;
+    box-shadow: 0 0 10px rgba(54, 203, 168, 0.3);
+    position: relative;
+    font-family: sans-serif;
+}
+
+.modal-content h2 {
+    color: #ffd700;
+    text-align: center;
+    margin-top: 0;
+    text-shadow: 0 0 2px #ffd700;
+    margin-bottom: 1rem;
+}
+
+.texto-instrucciones p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+    font-size: 1.1rem;
+}
+
+.cerrar-modal {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cerrar-modal:hover {
+    color: #ff4d4d; /* Se pone rojo al pasar el mouse */
+}
+
+#btn-como-jugar{
+    background-color: #1b7f8e99;
+    color: var(--texto);
+    width: 9rem;
+    height: 2.5rem;
+    border-radius: 10px;
+    border: 2px solid var(--acento);
+}
+
+#btn-como-jugar:hover {
+    background-color:#13a0b6cb; 
+    color: white;
+    border-color: #22d3ee99;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(34, 211, 238, 0.9);
+}
+
+.btn-rotar {
+    background: transparent;
+    border: none; /* ¡ESTA ES LA LÍNEA QUE ELIMINA EL CUADRADO! */
+    color: white; /* Color normal del ícono */
+    cursor: pointer;
+    padding: 2px; /* Apenas un margen para que sea fácil hacerle clic */
+    display: inline-flex; 
+    align-items: center;
+    justify-content: center;
+    outline: none; /* Evita el recuadro azul de Windows al hacer clic */
+}
+
+.btn-rotar:hover {
+    background: transparent; 
+    color: var(--acento, #36cba8); /* Solo cambia el color del ícono */
+}
+
+.icono-svg {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease, fill 0.3s ease; 
+}
+
+/* El giro sobre su propio eje */
+.btn-rotar:hover .icono-svg {
+    transform: rotate(120deg);
+}
+
+
