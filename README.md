@@ -24,15 +24,15 @@ Este proyecto es un simulador del clásico juego de estrategia naval, desarrolla
 Proyecto desarrollado por **Bruno**. El enfoque principal de este trabajo fue profundizar en la lógica de herencia de clases y la organización de esquemas de bases de datos para aplicaciones interactivas.
 ## Paginás
 Estas son las diferentes paginas dentro de la aplicación.
-### Iniciar Sesión
+## Iniciar Sesión
 <img width="1896" height="895" alt="image" src="https://github.com/user-attachments/assets/067d9978-e60f-4a7c-a3c5-79cac65d2c85" />
-### Registrarse
+## Registrarse
 <img width="1899" height="907" alt="image" src="https://github.com/user-attachments/assets/4a6a1a9a-86c6-41b8-805c-dc0ac6f5c897" />
-### Pantalla Inicio
+## Pantalla Inicio
 <img width="1902" height="905" alt="image" src="https://github.com/user-attachments/assets/6bca56d1-c73e-42f7-a93b-1f9be75b8047" />
-### Pantalla del Juego
+## Pantalla del Juego
 <img width="1896" height="902" alt="image" src="https://github.com/user-attachments/assets/d213a7a0-9343-4af3-8280-818318a2f7f8" />
-### Pantalla Final de Juego
+## Pantalla Final de Juego
 <img width="1896" height="902" alt="image" src="https://github.com/user-attachments/assets/6f51beeb-8bf0-4231-9035-461bc996ae98" />
 
 
